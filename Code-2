@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int intValue = 42;
+        double doubleValue = 10.5;
+        char charValue = 'A';
+        boolean booleanValue = true;
+        System.out.println("Befor Conversion:");
+        System.out.println("int: " + intValue);
+        System.out.println("double: " + doubleValue);
+        System.out.println("char: " + charValue);
+        System.out.println("boolean: " + booleanValue);
+        double intToDouble = intValue;
+        int charToInt = charValue;
+        System.out.println("\nAfter Type Conversion:");
+        System.out.println("int to double: " + intToDouble);
+        System.out.println("char to int: " + charToInt);
+    }
+}
