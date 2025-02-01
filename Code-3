@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the total cart amount: ");
+        int Amount=sc.nextInt();
+        double discount=(Amount>5000) ? Amount*0.20 :
+                        (Amount>=3000 && Amount<=5000) ? Amount*0.10 :0;
+        double FinalAmount=Amount-discount;
+        System.out.println("Discount: Rs " + discount);
+        System.out.println("Total Amount: Rs " + FinalAmount);
+    }
+}
